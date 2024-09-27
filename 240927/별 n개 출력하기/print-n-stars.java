@@ -11,7 +11,10 @@ public class Main { // CODE_TREE
         int n = Integer.parseInt(st.nextToken());
         int i = 0;
         while(i < 5){
-            bw.write("*\n");
+            bw.write("*");
+            if (i == 4)
+                break;
+            bw.write("\n");
             i++;
         }
 
