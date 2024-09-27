@@ -10,10 +10,8 @@ public class Main { // CODE_TREE
         StringTokenizer st = new StringTokenizer(br.readLine());
         int n = Integer.parseInt(st.nextToken());
         int i = 0;
-        while(i < 5){
+        while(i < n){
             bw.write("*");
-            if (i == 4)
-                break;
             bw.write("\n");
             i++;
         }
