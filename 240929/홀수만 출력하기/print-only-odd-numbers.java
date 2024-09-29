@@ -16,7 +16,7 @@ public class Main { // CODE_TREE
             x++;
         }
         for (int i = 0; i < n; i++) {
-            if (arr[i] % 3 == 0) {
+            if ((arr[i] % 3 == 0) && (arr[i] % 2 == 1)) {
                 bw.write(arr[i] + "\n");
             }
         }
