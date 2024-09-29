@@ -14,7 +14,7 @@ public class Main { // CODE_TREE
         if (a % 1 == 0 && a > 0)
             for (int i = 0; i < b; i++)
                 bw.write(a + "");
-        else if (a < 0)
+        else if (a <= 0)
             bw.write("0");
 
 
