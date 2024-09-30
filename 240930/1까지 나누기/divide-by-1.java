@@ -9,14 +9,13 @@ public class Main { // CODE_TREE
 
         int n = Integer.parseInt(br.readLine());
         int cnt = 0;
+        int div = 1;
 
-        for (int x = 1; x <= n; x++) {
-            n /= x;
+        while (n > 1) {
+            n /= div;
             cnt++;
-            if (n <= 1)
-                break;
+            div++;
         }
-        cnt++;
         bw.write(cnt + "");
 
 
