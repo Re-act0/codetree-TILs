@@ -21,6 +21,7 @@ public class Main { // CODE_TREE
             s1 = s1.substring(1, s1.length()) + s1.substring(0, 1);
             if (s1.equals(s2)) {
                 bw.write(cnt + "");
+                break;
             } else {
                 cnt++;
             }
