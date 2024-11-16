@@ -14,23 +14,19 @@ public class Main { // CODE_TREE
         String s1 = br.readLine();
         String s2 = br.readLine();
         int num = s1.length();
+        int cnt = 0;
 
-        int cnt = 1;
-
-        while (num > 0) {
-            s1 = s1.substring(1, s1.length()) + s1.substring(0, 1);
+        for (int i = 1; i <= num; i++) {
+            s1 = s1.substring(num - 1, num) + s1.substring(0, num - 1);
             if (s1.equals(s2)) {
-                bw.write(cnt + "");
-                break;
-            } else {
-                cnt++;
+                bw.write(i + "");
+                bw.flush();
+                return;
             }
-            num--;
         }
-        if (cnt - 1 == s1.length()) {
-            bw.write("-1");
-        }
+
+        bw.write("-1");
+
         bw.flush();
     }
 }
-
